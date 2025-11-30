@@ -1,1 +1,13 @@
-Error en la linea: 13. Por valor numérico no valido... 32.. <--
+TOKEN  SERIE  
+--------------
+if     1110   
+(      5010   
+a      6001   
+>      2090   
+a      6001   
+)      5020   
+c      6002   
+;      3020   
+
+
+

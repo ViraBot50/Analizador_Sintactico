@@ -3,5 +3,16 @@ from clases.archivo import Archivo
 
 v_objAutomata=Automata()
 v_ctrlArchivos=Archivo()
-v_ctrlArchivos.m_geneOutput(v_objAutomata.m_inicReviLexico(),"lexico")
+v_tokens=v_objAutomata.m_obteListTokens()
+
+if isinstance(v_tokens, str):
+    v_ctrlArchivos.m_geneOutput(v_tokens, "lexico")
+else:
+    print(v_tokens[0][0]+" "+v_tokens[0][1])
+    ##comenzar error sintactico
+
+
+
+
+
 
