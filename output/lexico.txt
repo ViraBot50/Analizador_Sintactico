@@ -1,0 +1,1 @@
+Error en la linea: 13. Por valor numérico no valido... 32.. <--

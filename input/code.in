@@ -1,0 +1,23 @@
+class operaciones{
+    int suma(a,b){
+        boolean bandera=true;
+        return a+b;
+    }
+
+    double resta(a,b){
+        return a-b;
+    }
+}
+
+if(edad>18||edad==edadexacta){
+    edad/32..;
+}else{
+    edad/2;
+}
+
+void
+this.edad
+while(int new)
+float numeros = new float[10];
+
+class operaciones
