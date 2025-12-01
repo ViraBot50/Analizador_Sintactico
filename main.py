@@ -8,8 +8,9 @@ v_tokens=v_objAutomata.m_obteListTokens()
 if isinstance(v_tokens, str):
     v_ctrlArchivos.m_geneOutput(v_tokens, "lexico")
 else:
-    print(v_tokens[0][0]+" "+v_tokens[0][1])
-    ##comenzar error sintactico
+    from clases.Sintactico import Sintactico
+    v_objSintactico = Sintactico()
+    v_objSintactico.m_analizar(v_tokens)
 
 
 
