@@ -13,7 +13,3 @@ else:
     v_objSintactico.m_analizar(v_tokens)
 
 
-
-
-
-
