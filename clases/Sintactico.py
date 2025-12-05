@@ -39,15 +39,9 @@ class Sintactico:
             return False
 
     def m_parsear(self):
-        """
-        Parsea usando la pila explicita con backtracking.
-        """
         return self.m_parsear_desde(0, ["$", "S"], 0)
 
     def m_parsear_desde(self, paso_inicial, pila_inicial, indice_inicial):
-        """
-        Parsea recursivamente con backtracking.
-        """
         self.pila = pila_inicial.copy()
         self.indice = indice_inicial
         paso = paso_inicial
@@ -117,20 +111,13 @@ class Sintactico:
         return True
 
     def m_mostrarEstado(self, paso, top, token_actual):
-        """
-        Muestra el estado actual de la pila y el token.
-        """
         pila_str = " ".join(self.pila)
         print(f"Paso {paso}:")
         print(f"   Pila: [{pila_str}]")
         print(f"   Tope: '{top}' | Token: '{token_actual}'")
 
     def m_seleccionarderivacion(self, no_terminal, token, serie):
-        
-        """
-        Selecciona la primera derivacion que coincida (con backtracking).
-        Prueba en orden hasta encontrar una que funcione.
-        """
+        #Comprueba que la primera deriv. coincida
         derivaciones_posibles = [p for p in self.a_gramatica if p["NT"] == no_terminal]
 
         for prod in derivaciones_posibles:
